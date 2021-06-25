@@ -1,0 +1,50 @@
+.modal-dialog {
+    width: 70%;
+    max-width: 90%;
+    .images {
+        display: flex;
+        align-items: center;
+        .image {
+            height:90%;
+            width:100%;
+            margin:auto;
+            background-color: grey;
+        }
+    }
+    .bookCol {
+        display: flex;
+        align-items: center;
+        .booking {
+            height:80%;
+            width:100%;
+            margin:auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                justify-content: center;
+                #start, #end {
+                    padding:5px;
+                    margin: 5px;
+                    width:45%;
+                }
+            }
+            .btn {
+                width: 90%;
+                margin: auto;
+            }
+            
+        }
+    }
+    
+}
+
+.site-calendar-demo-card {
+    display: none;
+    position: absolute;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+  }
