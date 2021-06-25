@@ -1,11 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
+import Main from './components/Main';
+import Provider from './context/Context';
+
 
 function App() {
   return (
+    <Provider>
     <div className="App">
-      <h1>TEST</h1>
+      <Main/>
     </div>
+    </Provider>
   );
 }
 
