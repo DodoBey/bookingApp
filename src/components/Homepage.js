@@ -11,7 +11,7 @@ const Homepage = () => {
     console.log(ctxData)
 
     const houses = ctxData.map((house, key) => {
-        console.log(house.amenities.transportation)
+        console.log(house.amenities.transportation.close)
         const transport = house.amenities.transportation;
         var transportDistance = ""
         switch(transport) {
@@ -27,6 +27,7 @@ const Homepage = () => {
             default:
                 transportDistance = "No Data"
         }
+        console.log(transportDistance)
         return (
             <Col className="propertyArea" key={Math.random}>
                 <div className="propertyImg">
@@ -41,7 +42,7 @@ const Homepage = () => {
                 <div className="propertyInfo">
                     <h4>{house.title}</h4>
                     <div className="propertyAmenities">
-                        <span><FontAwesomeIcon icon={faBed} />{house.bedroom} Bedroom</span>
+                        <span><FontAwesomeIcon icon={faBed} />{house.bedrooms} Bedroom</span>
                         <span><FontAwesomeIcon icon={faShower} />{house.amenities.bathroom} Bathroom</span>
                         <span><FontAwesomeIcon icon={faWifi} />{() => house.amenities.wifi = true ? "Wifi Included" : "No Wifi"}</span>
                     </div>
