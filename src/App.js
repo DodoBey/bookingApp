@@ -1,20 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import React, { useEffect, useState } from "react";
-import { Button } from 'react-bootstrap';
+import './App.scss';
 import Main from './components/Main';
 import Provider from './context/Context';
 
+
 function App() {
-  
-  
-    return (
-      <>
-      <Provider>
-        <Main/>
-      </Provider>
-      </>
-    );
+  return (
+    <Provider>
+    <div className="App">
+      <Main/>
+    </div>
+    </Provider>
+  );
 }
 
 export default App;
