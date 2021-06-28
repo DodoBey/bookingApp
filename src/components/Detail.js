@@ -107,6 +107,7 @@ export default function Detail(props){
                           <span>Children</span><button onClick={()=>{if(children>0)setChildren(children-1)}}>-</button><span>{children}</span><button onClick={()=>{setChildren(children+1)}}>+</button>
                         </div>
                       </div>
+                      {totalPrice ?
                       <div className='totalPrice'>
                         <ul>
                           <li>${house.price} x {numDays} Nights</li>
@@ -121,8 +122,10 @@ export default function Detail(props){
                           <li>${(totalPrice*0.15).toFixed(2)}</li>
                           <hr/>
                           <li><b>${(totalPrice * 1.25).toFixed(2)} CAD</b></li>
-                        </ul>
+                        </ul>  
                       </div>
+                      :
+                      <div></div>}
                       <Button onClick={()=>toggleCheckout(true)}>Checkout</Button>
                   </div>
                 </Col>
