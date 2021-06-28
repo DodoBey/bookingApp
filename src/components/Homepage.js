@@ -1,16 +1,22 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed, faBus, faMapMarkerAlt, faParking, faShower, faWifi } from '@fortawesome/free-solid-svg-icons';
 import './Homepage.scss';
 import { myContext } from '../context/Context';
+import { Button } from 'react-bootstrap';
+import Detail from './Detail';
 
 const Homepage = () => {
 
     const ctxData = useContext(myContext);
-    console.log(ctxData)
+    const [houseId, setHouseId] = useState(ctxData.houses[0]);
+    const [modalShow, setModalShow] = useState(false);
+    useEffect(() => {
+        ctxData.dispatch({type:'CHECKOUT', payload:false});
+    },[modalShow])
 
-    const houses = ctxData.map((house, key) => {
+    const houses = ctxData.houses.map((house, key) => {
         const transport = house.amenities.transportation;
         var transportDistance = ""
         switch (transport) {
@@ -54,7 +60,11 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className="propertyButton">
-                    <button>Details</button>
+                    {/* <button>Details</button> */}
+                    <Button variant="primary" onClick={() => { setHouseId(house); setModalShow(true)}}>
+                        Details
+                    </Button>
+                    <Detail show={modalShow} housedata={houseId} onHide={() => { setModalShow(false)}} />
                 </div>
             </Col>
         )

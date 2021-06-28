@@ -4,30 +4,29 @@ import Detail from '../components/Detail';
 import houses from '../components/Houses'
 
 export const myContext = React.createContext();
-// export const Consumer = Context.Consumer;
 
+
+function reducer(state, action) {
+    switch (action.type) {
+      case 'CHECKOUT':
+        return {
+            ...state,
+            checkout: action.payload
+        };
+      default:
+          return {
+              ...state
+          };
+    };
+}
 
 const initialState = houses;
 
-function reducer(state, action) {
-    // switch (action.type) {
-    //   case '':
-    //     return {count: state.count + 1};
-    //   case '':
-    //     return {count: state.count - 1};
-    //   case '':
-    //     return init(action.payload);
-    //   default:
-    //     throw new Error();
-    // }
-  }
-  
-
 export default function Provider(props) {
-    
     const [state, dispatch] = useReducer(reducer, initialState);
+
     return(
-        <myContext.Provider value={state.houses}>
+        <myContext.Provider value={{houses:state.houses, checkout:state.checkout, dispatch}}>
             {props.children}
         </myContext.Provider>
     )

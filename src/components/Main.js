@@ -4,7 +4,7 @@ import Header from "./Header";
 import Homepage from "./Homepage";
 import CarouselComp from "./Carousel"
 
-const Main = () => {
+export default function Main() {
     return (
         <>
         <Header/>
@@ -15,4 +15,3 @@ const Main = () => {
     )
 }
 
-export default Main;
