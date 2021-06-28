@@ -2,13 +2,16 @@
     width: 70%;
     max-width: 90%;
     .images {
+        margin:auto;
         display: flex;
-        align-items: center;
-        .image {
-            height:90%;
-            width:100%;
-            margin:auto;
-            background-color: grey;
+        flex-wrap: wrap;
+        height: min-content;
+        div {
+            text-align: center;
+            margin: 0.5%;
+        }
+        div:first-child{
+            width: 100% !important;
         }
     }
     .bookCol {
@@ -23,6 +26,7 @@
             padding: 10px;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
             div {
                 display: flex;
                 justify-content: center;
@@ -32,19 +36,37 @@
                     width:45%;
                 }
             }
+            .guests {
+                button {
+                    outline: none;
+                    border:transparent;
+                    border-radius: 20%;
+                    margin: 2px;
+                }
+                span {
+                    margin: 3px;
+                }
+            }
             .btn {
                 width: 90%;
                 margin: auto;
             }
-            
+            .totalPrice {
+                margin: 5px;
+                height:180px;
+                ul {
+                    list-style: none;
+                    hr {
+                        margin: 0;
+                        background-color: rgb(194, 194, 194);
+                    }
+                }
+            }
         }
+        
     }
-    
+    .amenities {
+        list-style: none;
+        padding-left: 0;
+    }
 }
-
-.site-calendar-demo-card {
-    display: none;
-    position: absolute;
-    border: 1px solid #f0f0f0;
-    border-radius: 2px;
-  }

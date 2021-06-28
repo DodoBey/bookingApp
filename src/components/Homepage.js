@@ -10,19 +10,17 @@ import Detail from './Detail';
 const Homepage = () => {
 
     const ctxData = useContext(myContext);
-    console.log(ctxData)
-
+    const [houseId, setHouseId] = useState(ctxData.houses[0]);
     const [modalShow, setModalShow] = useState(false);
     useEffect(() => {
         ctxData.dispatch({type:'CHECKOUT', payload:false});
     },[modalShow])
 
     const houses = ctxData.houses.map((house, key) => {
-        console.log(house.amenities.transportation)
-            const transport = house.amenities.transportation;
+        const transport = house.amenities.transportation;
         var transportDistance = ""
         switch(transport) {
-            case (transport.close === true) :
+            case ('close') :
                 transportDistance = "Less than 500m to Closest Public Transportation";
                 break;
             case (transport.mid === true) :
@@ -35,11 +33,11 @@ const Homepage = () => {
                 transportDistance = "No Data"
         }
         return (
-            <Col className="propertyArea" key={Math.random}>
+            <Col className="propertyArea" >
                 <div className="propertyImg">
                     <Carousel fade controls={false}>
                         {house.images.map((image, key) => {
-                            <Carousel.Item key={Math.random}>
+                            <Carousel.Item >
                                 <img src={image} alt="" />
                             </Carousel.Item>
                         })}
@@ -48,7 +46,7 @@ const Homepage = () => {
                 <div className="propertyInfo">
                     <h4>{house.title}</h4>
                     <div className="propertyAmenities">
-                        <span><FontAwesomeIcon icon={faBed} />{house.bedroom} Bedroom</span>
+                        <span><FontAwesomeIcon icon={faBed} />{house.bedrooms} Bedroom</span>
                         <span><FontAwesomeIcon icon={faShower} />{house.amenities.bathroom} Bathroom</span>
                         <span><FontAwesomeIcon icon={faWifi} />{() => house.amenities.wifi = true ? "Wifi Included" : "No Wifi"}</span>
                     </div>
@@ -60,10 +58,10 @@ const Homepage = () => {
                 </div>
                 <div className="propertyButton">
                     {/* <button>Details</button> */}
-                    <Button variant="primary" onClick={() => setModalShow(true)}>
+                    <Button variant="primary" onClick={() => { setHouseId(house); setModalShow(true)}}>
                         Details
                     </Button>
-                    <Detail show={modalShow} onHide={() => { setModalShow(false)}} />
+                    <Detail show={modalShow} housedata={houseId} onHide={() => { setModalShow(false)}} />
                 </div>
             </Col>
         )
