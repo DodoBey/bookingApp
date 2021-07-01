@@ -28,8 +28,12 @@ export default {
                 "https://source.unsplash.com/1600x900/?property4", 
                 "https://source.unsplash.com/1600x900/?property5"
             ],
-            initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            unavailable: [
+                '2021-07-20',
+                '2021-07-21',
+                '2021-07-22',
+                '2021-07-23'
+            ]
         },{
             id: uuidv4(),
             title: 'Condo with Good Location',

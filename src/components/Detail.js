@@ -18,6 +18,10 @@ export default function Detail(props){
     const [house,setHouse] = useState(props.housedata);
     const [totalPrice,setTotalPrice] = useState('');
     const [numDays,setNumDays] = useState(1);
+    const [available,setAvailable] = useState(false);
+    const initialDate = new Date();
+    const finalDate = new Date(2021, 11, 17);
+
     const data = useContext(myContext);
 
     function toggleCheckout(value){
@@ -39,7 +43,7 @@ export default function Detail(props){
     }
     function parseDate(str) {
       let mdy = str.split('-');
-      return new Date(mdy[1], mdy[0]-1, mdy[2] );
+      return new Date(mdy[0], mdy[1]-1, mdy[2] );
   }
   function datediff(first, second) {
       return Math.round((second-first)/(1000*60*60*24));
@@ -48,6 +52,7 @@ export default function Detail(props){
       setDate2(date);
     },[date])
     useEffect(()=>{
+      console.log(parseDate(date));
       let days = datediff(parseDate(date),parseDate(date2));
       setNumDays(days);
     },[date2])
@@ -93,10 +98,10 @@ export default function Detail(props){
                       <div>
                         <input type="date" id="start" name="trip-start" placeholder='Check in'
                             value={date}
-                            min={formatDate(house.initialDate)} max={formatDate(house.finalDate)} onChange={(e)=>setDate(e.target.value)}/>
+                            min={formatDate(initialDate)} max={formatDate(finalDate)} onChange={(e)=>{if(!house.unavailable.some(x=>x===e.target.value)){setDate(e.target.value);setAvailable(true)}else{setAvailable(false)}}}/>
                         <input type="date" id="end" name="trip-end"
                         value={date2}
-                        min={date} max={formatDate(house.finalDate)} onChange={(e)=>setDate2(e.target.value)}/>
+                        min={date} max={formatDate(finalDate)} onChange={(e)=>{if(!house.unavailable.some((x)=>new Date(x)<=new Date(e.target.value)&&new Date(x)>=new Date(date))){setAvailable(true);setDate2(e.target.value)}else{setAvailable(false)}}}/>
                       </div>
                       <h6>Guests</h6>
                       <div className='guests'>
@@ -107,7 +112,7 @@ export default function Detail(props){
                           <span>Children</span><button onClick={()=>{if(children>0)setChildren(children-1)}}>-</button><span>{children}</span><button onClick={()=>{setChildren(children+1)}}>+</button>
                         </div>
                       </div>
-                      {totalPrice ?
+                      {(totalPrice&&available) ?
                       <div className='totalPrice'>
                         <ul>
                           <li>${house.price} x {numDays} Nights</li>
@@ -125,7 +130,7 @@ export default function Detail(props){
                         </ul>  
                       </div>
                       :
-                      <div></div>}
+                      <div>Unavailable dates</div>}
                       <Button onClick={()=>toggleCheckout(true)}>Checkout</Button>
                   </div>
                 </Col>
