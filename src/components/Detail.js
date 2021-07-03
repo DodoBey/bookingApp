@@ -32,8 +32,6 @@ export default function Detail(props) {
       month = '' + (d.getMonth() + 1),
       day = '' + (d.getDate()),
       year = d.getFullYear();
-    // if ((d.getMonth() + 1 + months)>12) {year = d.getFullYear() + 1}
-    // if ((d.getMonth() + 1 + months)<1) {year = d.getFullYear() - 1; month = 12 + parseInt(month)}
     if (month.length < 2)
       month = '0' + month;
     if (day.length < 2)
@@ -165,7 +163,7 @@ export default function Detail(props) {
             </Row>
           </Container>
         ) : (
-          <Checkout />
+          <Checkout days={numDays} price={(totalPrice * 1.25).toFixed(2)} adults={adults} children={children}/>
         )}
       </Modal.Body>
       <Modal.Footer>

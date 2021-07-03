@@ -1,16 +1,17 @@
 import { useContext, useEffect, useState } from 'react';
 import { myContext } from '../context/Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faChild, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCalendar, faChild, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col} from 'react-bootstrap';
 import './Checkout.scss'
 
 
-const Checkout = () => {
+const Checkout = (props) => {
     const data = useContext(myContext);
     console.log(data)
     return (
         <Container className="checkoutMain">
+            <FontAwesomeIcon icon={faArrowLeft} onMouseOver={(e)=>e.target.style.cursor='pointer'} onClick={()=>data.dispatch({ type: 'CHECKOUT', payload: false })}/>
             <Row>
             <Col lg={8} md={8} className="checkoutLeft">
             <Row className="formArea">
@@ -72,14 +73,14 @@ const Checkout = () => {
                     <img src="https://source.unsplash.com/1600x900/?property1" />
                 </div>
                 <div className="guestInfo">
-                    <span><FontAwesomeIcon icon={faCalendar} />7 Nights</span>
-                    <span><FontAwesomeIcon icon={faUser} />2 Adults</span>
-                    <span><FontAwesomeIcon icon={faChild} />1 Child</span>
+                    <span><FontAwesomeIcon icon={faCalendar} />{props.days} Nights</span>
+                    <span><FontAwesomeIcon icon={faUser} />{props.adults} Adults</span>
+                    <span><FontAwesomeIcon icon={faChild} />{props.children} Child</span>
                 </div>
                 <div className="paymentArea">
                     <div className="price">
                         <span>Total Price (Including Tax) =</span>
-                        <span>1370 Cad</span>
+                        <span>{props.price} CAD</span>
                     </div>
                     <button>PAY</button>
                 </div>
