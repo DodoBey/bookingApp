@@ -19,7 +19,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'close',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?property1", 
@@ -33,7 +33,8 @@ export default {
                 '2021-07-21',
                 '2021-07-22',
                 '2021-07-23'
-            ]
+            ],
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Condo with Good Location',
@@ -51,7 +52,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?condo", 
@@ -61,7 +62,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Mansion',
@@ -79,7 +81,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?mansion", 
@@ -89,7 +91,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Room for Couple',
@@ -107,7 +110,7 @@ export default {
                 bathroom: 'Shared',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?room", 
@@ -117,7 +120,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?room4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Tiny, Sweet House for Family',
@@ -135,7 +139,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?house", 
@@ -145,7 +149,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?house4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Tree House',
@@ -163,7 +168,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?treehouse", 
@@ -173,7 +178,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Penthouse on 52th Floor',
@@ -191,7 +197,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'close',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?penthouse", 
@@ -201,7 +207,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?penthouse4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Private Room with Private Bathroom',
@@ -219,7 +226,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'close',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?property1", 
@@ -229,7 +236,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?property5"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Shared Room in Large Suit',
@@ -247,7 +255,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?condo", 
@@ -257,7 +265,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Large Suit Located in Downtown',
@@ -275,7 +284,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?mansion", 
@@ -285,7 +294,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Big House With Beautiful View',
@@ -303,7 +313,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?mansion", 
@@ -313,7 +323,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Fully Furnished House for Family',
@@ -331,7 +342,7 @@ export default {
                 bathroom: 'Shared',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?room", 
@@ -341,7 +352,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?room4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Luxury Designed Mountain House',
@@ -359,7 +371,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?treehouse", 
@@ -369,7 +381,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Cozy Room at Quite Place',
@@ -387,7 +400,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'close',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?property1", 
@@ -397,7 +410,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?property5"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Luxury Studio in Mansion',
@@ -415,7 +429,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?mansion", 
@@ -425,7 +439,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Simple Apartment in New Building',
@@ -443,7 +458,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?treehouse", 
@@ -453,7 +468,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Bright Room Close to Expo Line',
@@ -471,7 +487,7 @@ export default {
                 bathroom: 'Shared',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?room", 
@@ -481,7 +497,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?room4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Great Spacious Privet House',
@@ -499,7 +516,7 @@ export default {
                 bathroom: 'Shared',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?room", 
@@ -509,7 +526,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?room4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Gorgeous And Renovated Basement',
@@ -527,7 +545,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'mid',
-                climate: false,
+                airconditioner: false,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?condo", 
@@ -537,7 +555,8 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
             title: 'Large Private Bedroom for Student',
@@ -555,7 +574,7 @@ export default {
                 bathroom: 'Private',
                 // Close Range <500m, mid >500 && <2000m, far >2000m ??
                 transportation: 'far',
-                climate: true,
+                airconditioner: true,
             },
             images: [
                 "https://source.unsplash.com/1600x900/?mansion", 
@@ -565,6 +584,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
             initialDate: new Date(),
-            finalDate: new Date(2021, 11, 17)
+            finalDate: new Date(2021, 11, 17),
+            description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         }]
 }

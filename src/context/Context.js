@@ -20,6 +20,8 @@ function reducer(state, action) {
     };
 }
 
+
+
 const initialState = houses;
 
 export default function Provider(props) {

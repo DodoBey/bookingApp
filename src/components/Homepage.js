@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBed, faBus, faMapMarkerAlt, faParking, faShower, faWifi } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faBus, faFan, faMapMarkerAlt, faParking, faShower, faSink, faTshirt, faWifi } from '@fortawesome/free-solid-svg-icons';
 import './Homepage.scss';
 import { myContext } from '../context/Context';
 import { Button } from 'react-bootstrap';
@@ -31,8 +31,7 @@ const Homepage = () => {
                 break;
             default:
                 transportDistance = "No Data"
-        }
-        console.log(house.id)
+        };
         return (
             <Col className="propertyArea" key={house.id}>
                 <div className="propertyImg">
@@ -48,10 +47,17 @@ const Homepage = () => {
                 </div>
                 <div className="propertyInfo">
                     <h4>{house.title}</h4>
+                    <div>
                     <div className="propertyAmenities">
                         <span><FontAwesomeIcon icon={faBed} />{house.bedrooms} Bedroom</span>
                         <span><FontAwesomeIcon icon={faShower} />{house.amenities.bathroom} Bathroom</span>
                         <span><FontAwesomeIcon icon={faWifi} />{house.amenities.wifi ? "Wifi Included" : "No Wifi"}</span>
+                    </div>
+                    <div className="propertyAmenities">
+                        <span><FontAwesomeIcon icon={faSink} />{house.amenities.kitchen ? "Kitchen Included" : "No Kitchen"}</span>
+                        <span><FontAwesomeIcon icon={faTshirt} />{house.amenities.laundry ? "Laundry Included" : "No Laundry"}</span>
+                        <span><FontAwesomeIcon icon={faFan} />{house.amenities.airconditioner ? "Air Conditioner Included" : "No Air Conditioner"}</span>
+                    </div>
                     </div>
                     <div className="locationAmenities">
                         <span><FontAwesomeIcon icon={faBus} />{transportDistance}</span>
