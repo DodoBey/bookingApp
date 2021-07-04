@@ -19,6 +19,7 @@ export default function Detail(props) {
   const [totalPrice, setTotalPrice] = useState('');
   const [numDays, setNumDays] = useState(1);
   const [available, setAvailable] = useState(false);
+  const [selectedDates, setSelectedDates] = useState([]);
   const initialDate = new Date();
   const finalDate = new Date(2021, 11, 17);
 
@@ -46,21 +47,36 @@ export default function Detail(props) {
   function datediff(first, second) {
     return Math.round((second - first) / (1000 * 60 * 60 * 24));
   }
+
+  const getDaysArray = (start, end) => {
+    let dt = new Date(start);
+    dt.setDate(dt.getDate() + 1)
+    for(var arr=[]; dt<=new Date(end); dt.setDate(dt.getDate()+1)){
+      arr.push(formatDate(new Date(dt)));
+    }
+    return arr;
+  };
+
   useEffect(() => {
     setDate2(date);
   }, [date])
+
   useEffect(() => {
-    console.log(parseDate(date));
     let days = datediff(parseDate(date), parseDate(date2));
     setNumDays(days);
+    setSelectedDates(getDaysArray(date,date2))
+    console.log(selectedDates)
   }, [date2])
+
   useEffect(() => {
     setHouse(props.housedata)
   }, [props.housedata])
+
   useEffect(() => {
     let total = numDays * (house.price * (0.8 + (0.2 * adults + 0.1 * children)));
     setTotalPrice(total);
   }, [numDays, adults, children])
+
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
       <Modal.Header closeButton>
@@ -163,7 +179,7 @@ export default function Detail(props) {
             </Row>
           </Container>
         ) : (
-          <Checkout days={numDays} price={(totalPrice * 1.25).toFixed(2)} adults={adults} children={children}/>
+          <Checkout id={house.id} days={numDays} dates={selectedDates} price={(totalPrice * 1.25).toFixed(2)} adults={adults} children={children}/>
         )}
       </Modal.Body>
       <Modal.Footer>

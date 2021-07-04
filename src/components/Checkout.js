@@ -82,7 +82,7 @@ const Checkout = (props) => {
                         <span>Total Price (Including Tax) =</span>
                         <span>{props.price} CAD</span>
                     </div>
-                    <button>PAY</button>
+                    <button onClick={()=>data.dispatch({ type:'UNAVAILABLE_DATES', payload: {id:props.id, dates:props.dates }})} >PAY</button>
                 </div>
             </div>
             </Col>

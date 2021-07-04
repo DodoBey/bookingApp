@@ -28,12 +28,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?property4", 
                 "https://source.unsplash.com/1600x900/?property5"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -61,12 +56,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo3", 
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -94,12 +84,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion3", 
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -127,12 +112,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?room3", 
                 "https://source.unsplash.com/1600x900/?room4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -160,12 +140,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?house3", 
                 "https://source.unsplash.com/1600x900/?house4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -193,12 +168,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse3", 
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -226,12 +196,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?penthouse3", 
                 "https://source.unsplash.com/1600x900/?penthouse4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -259,12 +224,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?property4", 
                 "https://source.unsplash.com/1600x900/?property5"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -292,12 +252,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo3", 
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -325,12 +280,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion3", 
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -358,12 +308,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion3", 
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -391,12 +336,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?room3", 
                 "https://source.unsplash.com/1600x900/?room4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -424,12 +364,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse3", 
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -457,12 +392,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?property4", 
                 "https://source.unsplash.com/1600x900/?property5"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -490,12 +420,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion3", 
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -523,12 +448,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?treehouse3", 
                 "https://source.unsplash.com/1600x900/?treehouse4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -556,12 +476,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?room3", 
                 "https://source.unsplash.com/1600x900/?room4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -589,12 +504,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?room3", 
                 "https://source.unsplash.com/1600x900/?room4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -622,12 +532,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?condo3", 
                 "https://source.unsplash.com/1600x900/?condo4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         },{
             id: uuidv4(),
@@ -655,12 +560,7 @@ export default {
                 "https://source.unsplash.com/1600x900/?mansion3", 
                 "https://source.unsplash.com/1600x900/?mansion4"
             ],
-            unavailable: [
-                '2021-07-20',
-                '2021-07-21',
-                '2021-07-22',
-                '2021-07-23'
-            ],
+            unavailable: [],
             description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
         }]
 }
