@@ -1,4 +1,3 @@
-import Detail from "./Detail";
 import Footer from "./Footer";
 import Header from "./Header";
 import Homepage from "./Homepage";

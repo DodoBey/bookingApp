@@ -1,6 +1,4 @@
-import { faLastfmSquare } from '@fortawesome/free-brands-svg-icons';
-import React, { useReducer, useState, useEffect } from 'react';
-import Detail from '../components/Detail';
+import React, { useReducer, useEffect } from 'react';
 import houses from '../components/Houses'
 
 export const myContext = React.createContext();

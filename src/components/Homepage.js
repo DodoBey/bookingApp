@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed, faBus, faFan, faMapMarkerAlt, faParking, faShower, faSink, faTshirt, faWifi } from '@fortawesome/free-solid-svg-icons';
 import './Homepage.scss';
@@ -12,6 +12,8 @@ const Homepage = () => {
     const ctxData = useContext(myContext);
     const [houseId, setHouseId] = useState(ctxData.houses[0]);
     const [modalShow, setModalShow] = useState(false);
+    const handleClose = () => setModalShow(false);
+
     useEffect(() => {
         ctxData.dispatch({type:'CHECKOUT', payload:false});
     },[modalShow])
@@ -70,7 +72,8 @@ const Homepage = () => {
                     <Button variant="primary" onClick={() => { setHouseId(house); setModalShow(true)}}>
                         Details
                     </Button>
-                    <Detail show={modalShow} housedata={houseId} onHide={() => { setModalShow(false)}} />
+                    <Detail show={modalShow} housedata={houseId} onHide={handleClose} />
+                    
                 </div>
             </Col>
         )
