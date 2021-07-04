@@ -1,4 +1,4 @@
-import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
+import { Container, Carousel } from 'react-bootstrap';
 import './Carousel.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandSparkles, faSmile, faUserShield } from '@fortawesome/free-solid-svg-icons';

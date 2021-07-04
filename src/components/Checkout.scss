@@ -7,6 +7,19 @@
                 flex-direction: column;
             }
         }
+        h5{
+            margin-top: 10px;
+        }
+        label{
+            margin-top: 10px;
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.6);
+            outline: none;
+        }
     }
     .checkoutRigt{
         margin: auto 0;

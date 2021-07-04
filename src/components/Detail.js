@@ -22,7 +22,7 @@ export default function Detail(props) {
   const [selectedDates, setSelectedDates] = useState([]);
   const initialDate = new Date();
   const finalDate = new Date(2021, 11, 17);
-
+  const hideModel = (props.onHide);
   const data = useContext(myContext);
 
   function toggleCheckout(value) {
@@ -56,6 +56,7 @@ export default function Detail(props) {
     }
     return arr;
   };
+  
 
   useEffect(() => {
     setDate2(date);
@@ -65,7 +66,7 @@ export default function Detail(props) {
     let days = datediff(parseDate(date), parseDate(date2));
     setNumDays(days);
     setSelectedDates(getDaysArray(date,date2))
-    console.log(selectedDates)
+    //console.log(selectedDates)
   }, [date2])
 
   useEffect(() => {
@@ -179,11 +180,11 @@ export default function Detail(props) {
             </Row>
           </Container>
         ) : (
-          <Checkout id={house.id} days={numDays} dates={selectedDates} price={(totalPrice * 1.25).toFixed(2)} adults={adults} children={children}/>
+          <Checkout  id={house.id} img={house.images[0]} days={numDays} dates={selectedDates} price={(totalPrice * 1.25).toFixed(2)}  adults={adults} children={children} hide={hideModel} />
         )}
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button onClick={hideModel}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
