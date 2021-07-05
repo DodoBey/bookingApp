@@ -9,11 +9,12 @@ import './Checkout.scss'
 const Checkout = (props) => {
     const data = useContext(myContext);
     
-    const paymentAlert = () => {
+    const payment = () => {
+        data.dispatch({ type: 'UNAVAILABLE_DATES', payload: { id: props.id, dates: props.dates } });
+        props.hide();
         alert("Payment Successful!");
     }
 
-    console.log(props.hide)
     return (
         <Container className="checkoutMain">
             <FontAwesomeIcon icon={faArrowLeft} onMouseOver={(e) => e.target.style.cursor = 'pointer'} onClick={() => data.dispatch({ type: 'CHECKOUT', payload: false })} />
@@ -87,7 +88,7 @@ const Checkout = (props) => {
                                 <span>Total Price (Including Tax) =</span>
                                 <span>{props.price} CAD</span>
                             </div>
-                            <button onClick={() => {data.dispatch({ type: 'UNAVAILABLE_DATES', payload: { id: props.id, dates: props.dates } }); paymentAlert(); props.hide() }} >PAY</button>
+                            <button onClick={() =>  payment() } >PAY</button>
                         </div>
                     </div>
                 </Col>
