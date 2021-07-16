@@ -89,10 +89,10 @@ export default function Detail(props) {
         {!data.checkout ? (
           <Container>
             <Row>
-              <Col md={10}>
+              <Col md={12} lg={10}>
                 <span>{house.address} <a href={house.map} target="blank"><FontAwesomeIcon icon={faMapMarkerAlt} />{house.adress}</a></span>
               </Col>
-              <Col md={2}>
+              <Col md={12} lg={10}>
                 {/* <p>Save</p> */}
               </Col>
             </Row>
@@ -107,7 +107,7 @@ export default function Detail(props) {
                   )}
                 </Image.PreviewGroup>
               </Col>
-              <Col className='bookCol' md={5}>
+              <Col className='bookCol' md={12} lg={5}>
                 <div className='booking'>
                   <h5>Add Dates for Prices</h5>
                   <div>
@@ -152,20 +152,20 @@ export default function Detail(props) {
             </Row>
 
             <Row>
-              <Col md={5}>
+              <Col className="description" md={12} lg={5}>
                 ${house.price} CAD / night
               </Col>
-              <Col md={2}>
+              <Col md={12} lg={2}>
                 {/* <img alt='hostimg' /> */}
               </Col>
             </Row>
 
             <Row>
-              <Col md={7}>
+              <Col  md={12} lg={7}>
                 <h4>Description</h4>
                 <p>{house.description}</p>
               </Col>
-              <Col md={5}>
+              <Col md={12} lg={5}>
                 <ul className="amenities">
                   <li><FontAwesomeIcon icon={faBed} />{house.bedrooms} Bedroom</li>
                   <li><FontAwesomeIcon icon={faShower} />{house.amenities.bathroom} Bathroom</li>

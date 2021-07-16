@@ -79,3 +79,20 @@
         }
     }  
 }
+
+@media (max-width: 768px) {
+    .checkoutMain{
+    .checkoutRigt{
+        margin: auto 0;
+        .information {
+            text-align: center;
+            img{
+                width: 80%;
+                margin: 30px auto;
+            }
+            border-bottom: 2px solid black;
+        }
+    }  
+
+}
+}

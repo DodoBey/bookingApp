@@ -42,3 +42,43 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .carouselArea {
+        height: 300px;
+        img {
+            height: 300px;
+        }
+    } 
+    
+    .bannerBorder{
+           .bannerArea{
+            p{
+                font-size: 15px;
+            }
+            .icons{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 378px) {
+    .carouselArea {
+        height: 200px;
+        img {
+            height: 200px;
+        }
+    } 
+    
+    .bannerBorder{
+           .bannerArea{
+            p{
+                font-size: 12px;
+            }
+            .icons{
+                font-size: 20px;
+            }
+        }
+    }
+}

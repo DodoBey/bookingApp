@@ -19,7 +19,7 @@ const Checkout = (props) => {
         <Container className="checkoutMain">
             <FontAwesomeIcon icon={faArrowLeft} onMouseOver={(e) => e.target.style.cursor = 'pointer'} onClick={() => data.dispatch({ type: 'CHECKOUT', payload: false })} />
             <Row>
-                <Col lg={8} md={8} className="checkoutLeft">
+                <Col lg={8} md={12} className="checkoutLeft">
                     <Row className="formArea">
                         <h5>Personal Information</h5>
                         <Col lg={12} md={12}>
@@ -73,7 +73,7 @@ const Checkout = (props) => {
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={4} md={4} className="checkoutRigt">
+                <Col lg={4} md={12} className="checkoutRigt">
                     <div >
                         <div className="information">
                             <img src={props.img} />

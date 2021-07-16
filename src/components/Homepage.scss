@@ -61,3 +61,38 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .propertyArea {
+        margin: 5px auto;
+    
+        .propertyImg {
+            width: 300px;
+        }
+    
+        .propertyInfo {
+            font-size: 0.8em;
+            .propertyAmenities {
+                flex-direction: column;
+            }
+    
+            .locationAmenities {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 378px) {
+    .propertyArea {
+        flex-direction: column;
+    
+        .propertyImg {
+            width: 100%;
+        }
+    
+        .propertyInfo {
+            margin-top: 10px;
+        }
+    }
+}

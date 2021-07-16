@@ -2,7 +2,7 @@
     width: 70%;
     max-width: 90%;
     .images {
-        margin:auto;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         height: min-content;
@@ -10,7 +10,7 @@
             text-align: center;
             margin: 0.5%;
         }
-        div:first-child{
+        div:first-child {
             width: 100% !important;
         }
     }
@@ -18,28 +18,32 @@
         display: flex;
         align-items: center;
         .booking {
-            height:80%;
-            width:100%;
-            margin:auto;
+            overflow-y: auto;
+            height: 80%;
+            width: 100%;
+            margin: auto;
             border: 1px solid black;
             border-radius: 10px;
             padding: 10px;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             div {
                 display: flex;
                 justify-content: center;
-                #start, #end {
-                    padding:5px;
+                #start,
+                #end {
+                    padding: 5px;
                     margin: 5px;
-                    width:45%;
+                    width: 45%;
                 }
             }
             .guests {
                 button {
                     outline: none;
-                    border:transparent;
+                    border: transparent;
                     border-radius: 20%;
                     margin: 2px;
                 }
@@ -53,7 +57,7 @@
             }
             .totalPrice {
                 margin: 5px;
-                height:180px;
+                height: 180px;
                 ul {
                     list-style: none;
                     hr {
@@ -63,7 +67,28 @@
                 }
             }
         }
-        
+    }
+    .amenities {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 100%;
+        .bookCol {
+            .booking {
+                width: 100%;
+                margin: 5px auto;
+                .totalPrice{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .description{
+        margin-top: 220px;
     }
     .amenities {
         list-style: none;
